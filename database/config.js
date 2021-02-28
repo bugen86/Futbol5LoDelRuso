@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 //Variables de entorno para la conexion, usuario, password
 const dbUser = process.env.DB_USER;
 const dbPassword = process.env.DB_PASSWORD;
-const dbURI = `mongodb+srv://${dbUser}:${dbPassword}@f5ldr.ciknc.mongodb.net`;
+const db = process.env.DB;
+const dbURI = `mongodb+srv://${dbUser}:${dbPassword}@f5ldr.ciknc.mongodb.net/${db}`;
 
 //Conexion a la base de datos de mongo atlas
 const dbConnect = async () => {
