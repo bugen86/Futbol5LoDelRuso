@@ -1,4 +1,3 @@
-const { date } = require("joi");
 const { Schema, model } = require("mongoose");
 
 const reservaSchema = Schema({

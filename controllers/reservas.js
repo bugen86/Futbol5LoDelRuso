@@ -1,8 +1,9 @@
 const Reserva = require("../models/Reserva");
 
-const all = async (_, res) => {
-    const data = await Reserva.find();
-    res.json(data);
+const all = (_, res) => {
+    Reserva.find()
+        .then((response) => res.json(response))
+        .catch((e) => console.log);
 };
 
 module.exports = { all };
