@@ -6,4 +6,8 @@ const all = (_, res) => {
         .catch((e) => console.log);
 };
 
+const guardar = async () => {
+    const data = Reserva.insertMany();
+};
+
 module.exports = { all };
