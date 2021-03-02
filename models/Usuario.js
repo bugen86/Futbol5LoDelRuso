@@ -4,19 +4,19 @@ const UsuarioSchema = Schema(
     {
         name: {
             type: String,
-            require: true,
+            required: true,
         },
         lastName: {
             type: String,
-            require: true,
+            required: true,
         },
         phone: {
             type: Number,
-            require: true,
+            required: true,
         },
         email: {
             type: String,
-            require: true,
+            required: true,
         },
         ts_created: {
             type: Date,
